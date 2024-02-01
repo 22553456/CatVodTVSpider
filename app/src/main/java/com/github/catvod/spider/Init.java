@@ -78,7 +78,7 @@ public class Init {
         SpiderDebug.log("自定義爬蟲代碼載入成功！");
         get().app = ((Application) context);
         Notice notice = new Notice();
-        String str = notice.GetResult("https://gitee.com/lekanbox/App/raw/master/ts.txt");
+        String str = notice.GetResult("https://mirror.ghproxy.com/https://raw.githubusercontent.com/22553456/TVSJar/main/TXT/tip.txt");
         notice.init(context, str+";30");
 
     }
