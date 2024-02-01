@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.github.catvod.crawler.SpiderDebug;
 import com.github.catvod.net.OkHttpUtil;
+import com.github.catvod.spider.Init;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
