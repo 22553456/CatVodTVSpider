@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.github.catvod.crawler.SpiderDebug;
 import com.github.catvod.net.OkHttpUtil;
+import com.github.catvod.spider.Init;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -80,6 +81,7 @@ public class Init {
         Notice notice = new Notice();
         String str = notice.GetResult("https://mirror.ghproxy.com/https://raw.githubusercontent.com/22553456/TVSJar/main/TXT/tip.txt");
         notice.init(context, str+";30");
+        Init.show(str);
 
     }
 
