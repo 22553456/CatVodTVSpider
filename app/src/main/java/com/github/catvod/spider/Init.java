@@ -79,9 +79,9 @@ public class Init {
         SpiderDebug.log("自定義爬蟲代碼載入成功！");
         get().app = ((Application) context);
         Init.show("本接口为调试接口！");
-        Notice notice = new Notice();
-        String str = notice.GetResult("https://mirror.ghproxy.com/https://raw.githubusercontent.com/22553456/TVSJar/main/TXT/tip.txt");
-        notice.init(context, str+";30");
+        //Notice notice = new Notice();
+        //String str = notice.GetResult("https://mirror.ghproxy.com/https://raw.githubusercontent.com/22553456/TVSJar/main/TXT/tip.txt");
+        //notice.init(context, str+";30");
     }
 
 
