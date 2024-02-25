@@ -76,9 +76,9 @@ public class Init {
      * 因为它不依附于任何对象,既然都没有对象,就谈不上this了
      * */
     public static void init(Context context) {
+        Init.show("洗洗睡吧，Too Many Requests。");
         SpiderDebug.log("自定義爬蟲代碼載入成功！");
         get().app = ((Application) context);
-        Init.show("本接口为调试接口！");
         //Notice notice = new Notice();
         //String str = notice.GetResult("https://mirror.ghproxy.com/https://raw.githubusercontent.com/22553456/TVSJar/main/TXT/tip.txt");
         //notice.init(context, str+";30");
