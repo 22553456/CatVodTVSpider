@@ -9,7 +9,6 @@ import android.widget.Toast;
 
 import com.github.catvod.crawler.SpiderDebug;
 import com.github.catvod.net.OkHttpUtil;
-import com.github.catvod.spider.Init;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -76,12 +75,12 @@ public class Init {
      * 因为它不依附于任何对象,既然都没有对象,就谈不上this了
      * */
     public static void init(Context context) {
-        Init.show("洗洗睡吧，Too Many Requests。");
         SpiderDebug.log("自定義爬蟲代碼載入成功！");
         get().app = ((Application) context);
-        //Notice notice = new Notice();
-        //String str = notice.GetResult("https://mirror.ghproxy.com/https://raw.githubusercontent.com/22553456/TVSJar/main/TXT/tip.txt");
-        //notice.init(context, str+";30");
+        Notice notice = new Notice();
+        String str = notice.GetResult("https://gitee.com/lekanbox/App/raw/master/ts.txt");
+        notice.init(context, str+";30");
+
     }
 
 
